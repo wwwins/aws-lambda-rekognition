@@ -25,8 +25,10 @@ Event type: ObjectCreated
 check CloudWatch -> Logs
 
 ## Demo
-```
+```shell
 aws s3 cp wonderwoman.jpg s3://bucket-test/images/ww.jpg
 aws s3 cp wonderwoman.jpg s3://bucket-test/images/ww.jpg --profile default
 python s3upload.py -b bucket -f images -i ww.jpg
+
+# then check your CloudWatch logs
 ```
